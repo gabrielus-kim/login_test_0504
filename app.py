@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app=Flask(__name__,
         static_folder='static',
@@ -10,6 +10,6 @@ app.config['DEBUG']=True
 @app.route('/')
 def index():
 
-    return 'hello Python'
+    return render_template('template.html')
 
 app.run(port=8000)
