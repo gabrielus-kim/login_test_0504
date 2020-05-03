@@ -10,6 +10,6 @@ app.config['DEBUG']=True
 @app.route('/')
 def index():
 
-    return 'welcome'
+    return 'hello Python'
 
 app.run(port=8000)
